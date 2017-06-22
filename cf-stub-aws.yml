@@ -62,11 +62,11 @@ properties:
     db_encryption_key: CCDB_ENCRYPTION_KEY
     mutual_tls:
       ca_cert: |
-        CC_MUTUAL_TLS_CA_CERT
+CC_MUTUAL_TLS_CA_CERT
       public_cert: |
-        CC_MUTUAL_TLS_PUBLIC_CERT
+CC_MUTUAL_TLS_PUBLIC_CERT
       private_key: |
-        CC_MUTUAL_TLS_PRIVATE_KEY
+CC_MUTUAL_TLS_PRIVATE_KEY
   ccdb:
     db_scheme: CCDB_SCHEME
     roles:
