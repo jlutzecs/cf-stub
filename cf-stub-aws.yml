@@ -81,11 +81,16 @@ CC_MUTUAL_TLS_PRIVATE_KEY
   consul:
     encrypt_keys:
       - CONSUL_ENCRYPT_KEY
-    ca_cert: CONSUL_CA_CERT
-    server_cert: CONSUL_SERVER_CERT
-    server_key: CONSUL_SERVER_KEY
-    agent_cert: CONSUL_AGENT_CERT
-    agent_key: CONSUL_AGENT_KEY
+    ca_cert: |
+CONSUL_CA_CERT
+    server_cert: |
+CONSUL_SERVER_CERT
+    server_key: |
+CONSUL_SERVER_KEY
+    agent_cert: |
+CONSUL_AGENT_CERT
+    agent_key: |
+CONSUL_AGENT_KEY
   etcd:
     require_ssl: true
     ca_cert: |
@@ -112,22 +117,33 @@ ETCD_SERVER_KEY
     - end: 10.0.255.255
       start: 10.0.0.0
     tls:
-      ca_cert: LOGGREGATOR_CA_CERT
+      ca_cert: |
+LOGGREGATOR_CA_CERT
       doppler:
-        cert: LOGGREGATOR_DOPPLER_CERT
-        key: LOGGREGATOR_DOPPLER_KEY
+        cert: |
+LOGGREGATOR_DOPPLER_CERT
+        key: |
+LOGGREGATOR_DOPPLER_KEY
       trafficcontroller:
-        cert: LOGGREGATOR_TRAFFICCONTROLLER_CERT
-        key: LOGGREGATOR_TRAFFICCONTROLLER_KEY
+        cert: |
+LOGGREGATOR_TRAFFICCONTROLLER_CERT
+        key: |
+LOGGREGATOR_TRAFFICCONTROLLER_KEY
       metron:
-        cert: LOGGREGATOR_METRON_CERT
-        key: LOGGREGATOR_METRON_KEY
+        cert: |
+LOGGREGATOR_METRON_CERT
+        key: |
+LOGGREGATOR_METRON_KEY
       syslogdrainbinder:
-        cert: LOGGREGATOR_SYSLOGDRAINBINDER_CERT
-        key: LOGGREGATOR_SYSLOGDRAINBINDER_KEY
+        cert: |
+LOGGREGATOR_SYSLOGDRAINBINDER_CERT
+        key: |
+LOGGREGATOR_SYSLOGDRAINBINDER_KEY
       statsd_injector:
-        cert: LOGGREGATOR_STATSDINJECTOR_CERT
-        key: LOGGREGATOR_STATSDINJECTOR_KEY
+        cert: |
+LOGGREGATOR_STATSDINJECTOR_CERT
+        key: |
+LOGGREGATOR_STATSDINJECTOR_KEY
   loggregator_endpoint:
     shared_secret: LOGGREGATOR_ENDPOINT_SHARED_SECRET
   nats:
@@ -175,8 +191,10 @@ ETCD_SERVER_KEY
         - openid
         - cloud_controller.admin
         - doppler.firehose
-    sslCertificate: UAA_SERVER_CERT
-    sslPrivateKey: UAA_SERVER_KEY
+    sslCertificate: |
+UAA_SERVER_CERT
+    sslPrivateKey: |
+UAA_SERVER_KEY
   uaadb:
     db_scheme: UAADB_SCHEME
     roles:
