@@ -156,7 +156,8 @@ LOGGREGATOR_STATSDINJECTOR_KEY
   uaa:
     admin:
       client_secret: ADMIN_SECRET
-    ca_cert: UAA_CA_CERT
+    ca_cert: |
+UAA_CA_CERT
     cc:
       client_secret: CC_CLIENT_SECRET
     clients:
