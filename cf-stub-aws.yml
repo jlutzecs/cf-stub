@@ -111,7 +111,8 @@ ETCD_SERVER_CERT
 ETCD_SERVER_KEY
   login:
     saml:
-      serviceProviderKey: SERVICE_PROVIDER_PRIVATE_KEY
+      serviceProviderKey: |
+SERVICE_PROVIDER_PRIVATE_KEY
   loggregator:
     blacklisted_syslog_ranges:
     - end: 10.0.255.255
@@ -180,8 +181,10 @@ UAA_CA_CERT
       cc-service-dashboards:
         secret: CC_SERVICE_DASHBOARDS_SECRET
     jwt:
-      verification_key: JWT_VERIFICATION_KEY
-      signing_key: JWT_SIGNING_KEY
+      verification_key: |
+JWT_VERIFICATION_KEY
+      signing_key: |
+JWT_SIGNING_KEY
     scim:
       users:
       - name: admin
