@@ -113,6 +113,8 @@ ETCD_SERVER_KEY
     saml:
       serviceProviderKey: |
 SERVICE_PROVIDER_PRIVATE_KEY
+      serviceProviderCertificate: |
+SERVICE_PROVIDER_CERTIFICATE      
   loggregator:
     blacklisted_syslog_ranges:
     - end: 10.0.255.255
