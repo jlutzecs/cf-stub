@@ -113,6 +113,7 @@ ETCD_SERVER_KEY
     saml:
       serviceProviderKey: |
 SERVICE_PROVIDER_PRIVATE_KEY
+      serviceProviderKeyPassword: ""
       serviceProviderCertificate: |
 SERVICE_PROVIDER_CERTIFICATE      
   loggregator:
