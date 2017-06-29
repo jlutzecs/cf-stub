@@ -114,7 +114,7 @@ ETCD_SERVER_KEY
       protocol: http
       serviceProviderKey: |
 SERVICE_PROVIDER_PRIVATE_KEY
-      serviceProviderKeyPassword: ''
+      serviceProviderKeyPassword: 'testing'
       serviceProviderCertificate: |
 SERVICE_PROVIDER_CERTIFICATE      
   loggregator:
