@@ -111,7 +111,6 @@ ETCD_SERVER_CERT
 ETCD_SERVER_KEY
   login:
     saml:
-      protocol: http
       serviceProviderKey: |
 SERVICE_PROVIDER_PRIVATE_KEY
       serviceProviderKeyPassword: ''
