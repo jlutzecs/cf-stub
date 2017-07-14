@@ -239,6 +239,10 @@ UAA_SERVER_KEY
     db_schema: locket
     require_ssl: null
     ca_cert: null  
+  release-versions:
+    diego: latest
+    cflinuxfs2-rootfs: latest
+    garden-runc: 1.0.0  
   smoke_tests:
     api: testing
     apps_domain: testing
