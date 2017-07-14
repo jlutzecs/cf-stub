@@ -181,6 +181,13 @@ UAA_CA_CERT
         secret: LOGIN_CLIENT_SECRET
       notifications:
         secret: NOTIFICATIONS_CLIENT_SECRET
+      ssh-proxy:
+        authorized-grant-types: authorization_code
+        autoapprove: true
+        override: true
+        redirect-uri: "https://login.REPLACE_WITH_SYSTEM_DOMAIN/login"
+        scope: openid,cloud_controller.read,cloud_controller.write
+        secret: REPLACE_WITH_SSH_PROXY_PASSWORD  
       cc-service-dashboards:
         secret: CC_SERVICE_DASHBOARDS_SECRET
     jwt:
@@ -213,3 +220,32 @@ UAA_SERVER_KEY
         name: uaadb
     address: UAADB_ADDRESS
     port: UAADB_PORT
+  smoke_tests:
+    api: testing
+    apps_domain: testing
+    user: admin
+    password: testing
+    org: test-org
+    space: test-space
+    skip_ssl_validation: true
+  acceptance_tests:
+    api: api.system.jtest.ecsteam.io
+    apps_domain: apps.jtest.ecsteam.io
+    system_domain: system.jtest.ecteam.io
+    admin_user: admin
+    admin_password: testing
+    backend: diego
+    include_backend_compatibility: true
+    include_internet_dependent: true
+    include_diego_docker: true
+    include_diego_ssh: true
+    include_logging: true
+    include_route_services: false
+    include_routing: true
+    include_security_groups: true
+    include_services: true
+    include_sso: true
+    nodes: 2
+    skip_diego_unsupported_tests: true
+    skip_ssl_validation: true
+    use_http: true
