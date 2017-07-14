@@ -1,0 +1,20 @@
+sql_overrides:
+  bbs:
+    db_driver: mysql
+    db_host: broadiq.com
+    db_port: 3306
+    db_username: diego
+    db_password: diego
+    db_schema: diego
+    max_open_connections: 500
+    require_ssl: null
+    ca_cert: null
+  locket:
+    db_driver: mysql
+    db_host: broadiq.com
+    db_port: 3306
+    db_username: locket
+    db_password: locket
+    db_schema: locket
+    require_ssl: null
+    ca_cert: null
