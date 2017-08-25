@@ -1,1 +1,23 @@
-
+---
+  ccdb:
+    db_scheme: CCDB_SCHEME
+    roles:
+      - tag: admin
+        name: CCDB_USER_NAME
+        password: CCDB_PASSWORD
+    databases:
+      - tag: cc
+        name: ccdb
+    address: CCDB_ADDRESS
+    port: CCDB_PORT
+  uaadb:
+    db_scheme: UAADB_SCHEME
+    roles:
+      - tag: admin
+        name: UAADB_USER_NAME
+        password: UAADB_USER_PASSWORD
+    databases:
+      - tag: uaa
+        name: uaadb
+    address: UAADB_ADDRESS
+    port: UAADB_PORT
