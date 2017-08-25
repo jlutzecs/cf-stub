@@ -1,4 +1,5 @@
 ---
+properties:
   ccdb:
     db_scheme: CCDB_SCHEME
     roles:
